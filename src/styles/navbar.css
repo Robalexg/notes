@@ -1,0 +1,9 @@
+.navbar{
+    display: flex;
+    background: #ffff;
+    height: 20vh;
+}
+
+#navbar--pic{
+    height: 12em;
+}
