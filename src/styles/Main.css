@@ -1,0 +1,22 @@
+.main{
+    background: #F5F8FA;
+    height: 80vh;
+    border-radius: 2em 0 0 0;
+    padding: 2rem;
+}
+
+.main--cards{
+    display: flex;
+}
+.main--card{
+    background: #E0F1FF;
+    padding: 2em;
+    border-radius: 1em;
+    min-height: 20vh;
+    margin-right: 2em;  
+}
+
+.main--card img{
+    height: 5em;
+    margin-bottom: 1em;
+}

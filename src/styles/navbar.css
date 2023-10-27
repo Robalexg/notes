@@ -2,8 +2,54 @@
     display: flex;
     background: #ffff;
     height: 20vh;
+    align-items: center;
+    padding: 0 1em;
 }
 
-#navbar--pic{
-    height: 12em;
+
+#navbar--logo{
+    height: 10vw;
+
 }
+#navbar--pic{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    margin-right: 1.5em;
+}
+
+#navbar--name{
+    font-size: 1.2vw;
+    margin-right: .5em;
+
+}
+
+
+
+#navbar--search{
+    margin: 0 auto;
+    background: #F5F8FA;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#navbar--search img{
+    height: 1em;
+    margin-right: 1em;
+}
+
+#navbar--input{
+
+    border: none;
+    background: inherit;
+
+}
+
+
+#navbar--menu{
+    height: 2vw;
+}
+
+

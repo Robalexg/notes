@@ -1,0 +1,29 @@
+.icon{
+    height: 1em;
+}
+
+.sidebar{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar--btn{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.sidebar--btn:hover{
+    background: lightblue;
+}
+
+
+.sidebar--btn img{
+    margin-right: 1em;
+}
+
+.footer{
+    margin-top: auto;
+}
+
