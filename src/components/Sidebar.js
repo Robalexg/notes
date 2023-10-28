@@ -15,7 +15,10 @@ let Sidebar = () => {
 
 
     const onAdd = (e) => {
+        
         notes.push({title:{title},desc: ''})
+        console.log(notes)
+        handleClose(false)
     }
 
     const onChange = (e) => {
