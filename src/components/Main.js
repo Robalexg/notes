@@ -1,14 +1,17 @@
 import '../styles/Main.css'
 import note from '../images/note.png'
-import notes from '../db/notes.js'
 import { useState } from 'react';
-
+import { useSelector } from 'react-redux/es/hooks/useSelector';
 
 
 let Main = () => {
-    const [all,setAll] = useState(notes)
+    const notes = useSelector(state => state.notes)
+    // useSelector((state) => {
 
-    let not = all.map((item) => {
+    // })
+
+
+    let not = notes.map((item) => {
         return (
             <div className='main--card'>
                 <img src={note} alt="" />

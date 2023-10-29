@@ -4,21 +4,20 @@ import trash from '../images/trash.png'
 import add from '../images/plus (2).png'
 import { Button,Modal} from 'react-bootstrap'
 import { useState } from 'react';
-import notes from '../db/notes'
+import { useDispatch } from 'react-redux';
+import {addNote} from '../features/note/noteSlice'
 
 let Sidebar = () => {
     const [show, setShow] = useState(false);
     const [title,setTitle] = useState('')
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const dispatch = useDispatch()
 
-
-    const onAdd = (e) => {
-        
-        notes.push({title:{title},desc: ''})
-        console.log(notes)
+    const onAddHandler = (e) => {
+        e.preventDefault()
         handleClose(false)
+        dispatch(addNote({title,desc: ''}))
     }
 
     const onChange = (e) => {
@@ -45,7 +44,7 @@ let Sidebar = () => {
                     <input onChange={onChange} type="text" />
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button onClick={onAdd}>
+                    <Button onClick={onAddHandler}>
                         Add
                     </Button>
                 </Modal.Footer>
